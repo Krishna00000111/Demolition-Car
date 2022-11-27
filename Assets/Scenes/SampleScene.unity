@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.612985, g: 0.6757638, b: 0.8962264, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.009
@@ -10467,8 +10467,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 42
+  far clip plane: 300
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -10493,7 +10493,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
-  m_LocalRotation: {x: 0.24011807, y: 0.34401077, z: -0.09146378, w: 0.90312475}
+  m_LocalRotation: {x: -0.091463745, y: 0.9031248, z: -0.24011809, w: -0.34401062}
   m_LocalPosition: {x: -16.4, y: 16.96, z: -17.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10683,10 +10683,10 @@ MonoBehaviour:
   m_LookAt: {fileID: 48737667}
   m_Follow: {fileID: 261786959411173916}
   m_Lens:
-    FieldOfView: 42
+    FieldOfView: 50
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FarClipPlane: 300
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -10705,7 +10705,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127322705}
   m_LocalRotation: {x: 0.24011807, y: 0.34401077, z: -0.09146378, w: 0.90312475}
-  m_LocalPosition: {x: -18.764967, y: 16.96, z: -17.09}
+  m_LocalPosition: {x: 14.035039, y: 16.96, z: 10.789993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 283357493}
@@ -10752,7 +10752,7 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 5.7
+    m_Bias: 1.5
     m_NormalBias: 0
     m_NearPlane: 0.1
     m_CullingMatrixOverride:
@@ -10826,8 +10826,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642287924380434598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3649666, y: 0, z: 0.81}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000001490116}
+  m_LocalPosition: {x: -2.3649666, y: 0, z: -7.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4466888475901867981}
@@ -10837,7 +10837,7 @@ Transform:
   - {fileID: 48737667}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!33 &462318442915770075
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10860,7 +10860,7 @@ GameObject:
   - component: {fileID: 681914675}
   m_Layer: 0
   m_Name: Prometheus
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20822,7 +20822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934883528141592991}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0, z: -4.32}
+  m_LocalPosition: {x: -0.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8645027982062766898}

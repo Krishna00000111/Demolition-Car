@@ -6,7 +6,9 @@ public class DestructibleObject : MonoBehaviour
 {
     public GameObject destructedObject;
 
-    public Bomb bombScript;
+   // public Bomb bombScript;
+
+    private bool hasTouched;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +19,22 @@ public class DestructibleObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MakeDestroyable();
+        //MakeDestroyable();
     }
 
-    void MakeDestroyable()
+   /* void MakeDestroyable()
     {
-        if (bombScript.droped)
+        if (hasTouched)
         {
+        }
+    }*/
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            hasTouched = true;
+
             Instantiate(destructedObject, transform.position, transform.rotation);
             Destroy(gameObject);
         }
